@@ -280,6 +280,9 @@ Throws an error via the C<gerr::error> function if:
 sub open {
     my ($filename, $mode) = @_;
 
+    # Return already Opened File handles
+    return $OPENED{$filename} if(defined $OPENED{$filename});
+
     # Initialize file handle object
     my $gfio = {};
     bless $gfio;
