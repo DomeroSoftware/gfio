@@ -1,8 +1,9 @@
 Changes
+LICENSE
 MANIFEST
 Makefile.PL
 META.json
-README.md
+README
 lib/gfio.pm
-examples/example.pl
+examples/gfio.pl
 t/gfio.t
