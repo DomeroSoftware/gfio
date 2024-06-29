@@ -7,10 +7,10 @@
 
 ## Features
 
-- **File Operations**: Open, read, write, append, and truncate files easily.
-- **Locking Mechanisms**: Support for file locking using `flock` with `LOCK_EX` and `LOCK_SH`.
-- **Directory Operations**: Recursive directory listing and creation.
-- **Utility Functions**: Copying files, changing file ownership, creating directories, and more.
+- File Operations: Open, read, write, append, and truncate files easily.
+- Locking Mechanisms: Support for file locking using `flock` with `LOCK_EX` and `LOCK_SH`.
+- Directory Operations: Recursive directory listing and creation.
+- Utility Functions: Copying files, changing file ownership, creating directories, and more.
 
 ## Installation
 
