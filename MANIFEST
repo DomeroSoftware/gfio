@@ -1,0 +1,8 @@
+Changes
+MANIFEST
+Makefile.PL
+META.json
+README.md
+lib/gfio.pm
+examples/example.pl
+t/gfio.t

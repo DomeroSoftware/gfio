@@ -1,0 +1,67 @@
+
+# gfio - Perl File Handling Module
+
+## Description
+
+`gfio` is a Perl module designed to provide a flexible and intuitive interface for file handling operations. It simplifies tasks such as reading, writing, appending, and managing files within Perl scripts.
+
+## Features
+
+- **File Operations**: Open, read, write, append, and truncate files easily.
+- **Locking Mechanisms**: Support for file locking using `flock` with `LOCK_EX` and `LOCK_SH`.
+- **Directory Operations**: Recursive directory listing and creation.
+- **Utility Functions**: Copying files, changing file ownership, creating directories, and more.
+
+## Installation
+
+To install `gfio`, simply use CPAN:
+
+	$ cpan install gfio
+
+Alternatively, you can download the source code from [CPAN](https://metacpan.org/release/gfio) and install it manually:
+
+	$ perl Makefile.PL
+	$ make
+	$ make test
+	$ make install
+
+## Usage
+
+Here's a basic example demonstrating how to use `gfio`:
+
+	use gfio;
+
+	# Open a file for writing
+	my $fh = gfio::open('example.txt', 'w');
+	$fh->write("Hello, World!\n");
+	$fh->close;
+
+	# Append data to an existing file
+	$fh = gfio::open('example.txt', 'a');
+	$fh->append("More data...\n");
+	$fh->close;
+
+	# Read from a file
+	$fh = gfio::open('example.txt', 'r');
+	my $content = $fh->read();
+	print "File content: $content\n";
+	$fh->close;
+
+For more detailed documentation, including a list of available methods and their parameters, refer to the POD documentation in the module's source code.
+
+## Contributing
+
+Contributions are welcome! To contribute to `gfio`, fork the repository on [GitHub](https://github.com/DomeroSoftware/gfio), commit your changes, and submit a pull request.
+
+## Issues
+
+If you encounter any issues with `gfio`, please report them on the [GitHub issue tracker](https://github.com/DomeroSoftware/gfio/issues).
+
+## License
+
+This module is licensed under the MIT License. See the LICENSE file for details.
+
+## Author
+
+Chaosje, OnEhIppY, Domero, Romiso, Groningen
+Email: domerosoftware@gmail.com
