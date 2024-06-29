@@ -23,7 +23,7 @@ WriteMakefile(
     },
     PL_FILES     => {},
     EXE_FILES    => [],
-    DIR          => ['lib', 't', 'examples'],
+    DIR          => ['lib', 't', 'example'],
     clean        => { FILES => 'gfio-*' },
 );
 
