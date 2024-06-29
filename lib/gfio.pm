@@ -352,11 +352,7 @@ sub open {
     # Retrieve file size and set initial position
     my @st = stat($filename);
     $gfio->{size} = $st[7];
-    if ($gfio->{append}) {
-        $gfio->{position} = $gfio->{size};
-    } else {
-        $gfio->{position} = 0;
-    }
+    $gfio->{position} = $gfio->{append} ? $gfio->{size} : 0;
 
     # Mark file as opened and unlocked
     $gfio->{opened} = 1;
