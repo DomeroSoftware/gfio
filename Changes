@@ -1,17 +1,5 @@
 Revision history for Perl extension gfio
 
-0.01  Mon Jun 29 2023
-    - Original version released.
-    - Implemented basic directory and file operations: opening, reading, writing, and handling.
-    - Added support for creating directories and file paths recursively.
-    - Introduced functions for reading file and directory structures recursively.
-
-0.02  Tue Jun 30 2023
-    - Improved error handling and verbose output for file operations.
-    - Enhanced the `readfiles` and `readdirs` functions with better recursive reading capabilities.
-    - Added support for handling file extensions in `readfiles`.
-    - Included detailed documentation for each function in the module.
-
 0.03  Wed Jul 1 2023
     - Made module CPAN and PAUSE compatible.
     - Added a comprehensive test suite in `t/gfio.t` to ensure module reliability.
@@ -19,3 +7,15 @@ Revision history for Perl extension gfio
     - Added `examples/example.pl` to demonstrate basic usage of the module.
     - Included a `Changes` file to track module updates and revisions.
     - Updated documentation and pod sections for clarity and completeness.
+
+0.02  Tue Jun 30 2023
+    - Improved error handling and verbose output for file operations.
+    - Enhanced the `readfiles` and `readdirs` functions with better recursive reading capabilities.
+    - Added support for handling file extensions in `readfiles`.
+    - Included detailed documentation for each function in the module.
+
+0.01  Mon Jun 29 2023
+    - Original version released.
+    - Implemented basic directory and file operations: opening, reading, writing, and handling.
+    - Added support for creating directories and file paths recursively.
+    - Introduced functions for reading file and directory structures recursively.
